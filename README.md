@@ -1,9 +1,10 @@
 # passport-facebook
 
-[![Build](https://img.shields.io/travis/rwky/passport-facebook.svg)](https://travis-ci.org/rwky/passport-facebook)
-[![Coverage](https://img.shields.io/coveralls/rwky/passport-facebook.svg)](https://coveralls.io/r/rwky/passport-facebook)
-[![Quality](https://img.shields.io/codeclimate/github/rwky/passport-facebook.svg?label=quality)](https://codeclimate.com/github/rwky/passport-facebook)
-[![Dependencies](https://img.shields.io/david/rwky/passport-facebook.svg)](https://david-dm.org/rwky/passport-facebook)
+[![Build Status](https://travis-ci.org/passport-next/passport-facebook.svg?branch=master)](https://travis-ci.org/passport-next/passport-facebook)
+[![Coverage Status](https://coveralls.io/repos/github/passport-next/passport-facebook/badge.svg?branch=master)](https://coveralls.io/github/passport-next/passport-facebook?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d260f366c44991e2613c/maintainability)](https://codeclimate.com/github/passport-next/passport-facebook/maintainability)
+[![Dependencies](https://david-dm.org/passport-next/passport-facebook.png)](https://david-dm.org/passport-next/passport-facebook)
+<!--[![SAST](https://gitlab.com/passport-next/passport-facebook/badges/master/build.svg)](https://gitlab.com/passport-next/passport-facebook/badges/master/build.svg)-->
 
 
 [Passport](http://passportjs.org/) strategy for authenticating with [Facebook](http://www.facebook.com/)
@@ -17,7 +18,7 @@ unobtrusively integrated into any application or framework that supports
 
 ## Install
 
-    $ npm install passport-facebook
+    $ npm install @passport-next/passport-facebook
 
 ## Usage
 
@@ -187,24 +188,3 @@ expected to maintain that level.  Coverage reports can be viewed by executing:
 $ make test-cov
 $ make view-cov
 ```
-
-## Support
-
-#### Funding
-
-This software is provided to you as open source, free of charge.  The time and
-effort to develop and maintain this project is dedicated by [@jaredhanson](https://github.com/jaredhanson).
-If you (or your employer) benefit from this project, please consider a financial
-contribution.  Your contribution helps continue the efforts that produce this
-and other open source software.
-
-Funds are accepted via [PayPal](https://paypal.me/jaredhanson), [Venmo](https://venmo.com/jaredhanson),
-and [other](http://jaredhanson.net/pay) methods.  Any amount is appreciated.
-
-## License
-
-[The MIT License](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2011-2016 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/vK9dyjRnnWsMzzJTQ57fRJpH/jaredhanson/passport-facebook'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/vK9dyjRnnWsMzzJTQ57fRJpH/jaredhanson/passport-facebook.svg' /></a>
