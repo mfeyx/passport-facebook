@@ -1,3 +1,9 @@
+# 2.5.0 (2018-07-07)
+
+* Added profile mappings for hometown and currentLocation @rmacqueen 
+* Added profile mappings for ageRange @mhverbakel
+* Updated README.md @askmike @WeiChienHsu
+
 # 2.4.0 (2018-06-29)
 
 * Updated travis to use node 6, 8 and 10 @rwky
