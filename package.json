@@ -1,6 +1,6 @@
 {
   "name": "@passport-next/passport-facebook",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "description": "Facebook authentication strategy for Passport.",
   "keywords": [
     "passport",
@@ -30,13 +30,13 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "@passport-next/passport-oauth2": "1.5.x"
+    "@passport-next/passport-oauth2": "1.7.x"
   },
   "devDependencies": {
     "make-node": "0.3.x",
     "mocha": "5.x.x",
     "chai": "4.x.x",
-    "chai-passport-strategy": "1.x.x"
+    "@passport-next/chai-passport-strategy": "1.1.x"
   },
   "engines": {
     "node": ">= 6"

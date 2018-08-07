@@ -1,5 +1,6 @@
 # passport-facebook
 
+[![NPM version](https://img.shields.io/npm/v/@passport-next/passport-facebook.svg)](https://www.npmjs.com/package/@passport-next/passport-facebook)
 [![Build Status](https://travis-ci.org/passport-next/passport-facebook.svg?branch=master)](https://travis-ci.org/passport-next/passport-facebook)
 [![Coverage Status](https://coveralls.io/repos/github/passport-next/passport-facebook/badge.svg?branch=master)](https://coveralls.io/github/passport-next/passport-facebook?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d260f366c44991e2613c/maintainability)](https://codeclimate.com/github/passport-next/passport-facebook/maintainability)
@@ -112,9 +113,11 @@ for further details.
 
 ##### How do I obtain a user profile with specific fields?
 
-The Facebook profile contains a lot of information about a user.  By default,
-not all the fields in a profile are returned.  The fields needed by an application
+The Facebook profile contains a lot of information about a user.  By default, only the name and id
+fields are returned.  The fields needed by an application
 can be indicated by setting the `profileFields` option.
+
+**You should not include both name and displayName, if name is specified displayName will automatically be populated**
 
 ```js
 new FacebookStrategy({
@@ -125,7 +128,7 @@ new FacebookStrategy({
 }), ...)
 ```
 
-Refer to the [User](https://developers.facebook.com/docs/graph-api/reference/v2.5/user)
+Refer to the [User](https://developers.facebook.com/docs/graph-api/reference/user)
 section of the Graph API Reference for the complete set of available fields.
 
 ##### How do I include app secret proof in API requests?
@@ -158,14 +161,14 @@ Stack Overflow for recommendations on how to accomplish such removal.
 
 ##### What version of the graph API does this use?
 
-By default, all calls are made to **v2.12** of the graph API. You can modify this by setting the `graphApiVersion` option when creating the strategy.
+You must specify which version of the API to use when initiating the strategy by using the graphApiVersion option:
 
 ```js
 new FacebookStrategy({
   clientID: FACEBOOK_APP_ID,
   clientSecret: FACEBOOK_APP_SECRET,
   callbackURL: "http://localhost:3000/auth/facebook/callback",
-  graphApiVersion: 'v2.12'
+  graphApiVersion: 'v3.1'
 }, ...)
 ```
 

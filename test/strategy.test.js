@@ -3,14 +3,15 @@
 
 var chai = require('chai')
   , FacebookStrategy = require('../lib/strategy')
-  , graphApiVersion = FacebookStrategy.defaultGraphApiVersion;
+  , graphApiVersion = require('./graphApiVersion')
 
 describe('Strategy', function() {
 
   describe('constructed', function() {
     var strategy = new FacebookStrategy({
         clientID: 'ABC123',
-        clientSecret: 'secret'
+        clientSecret: 'secret',
+        graphApiVersion: graphApiVersion
       },
       function() {});
 
@@ -27,10 +28,23 @@ describe('Strategy', function() {
     });
   })
 
+  describe('constructed with missing graphApiVersion option', function() {
+    it('should throw', function() {
+      expect(function() {
+          var strategy = new FacebookStrategy({
+            clientID: 'ABC123',
+            clientSecret: 'secret',
+          },
+          function() {});
+      }).to.throw(Error);
+    });
+  })
+
   describe('authorization request with display parameter', function() {
     var strategy = new FacebookStrategy({
         clientID: 'ABC123',
-        clientSecret: 'secret'
+        clientSecret: 'secret',
+        graphApiVersion: graphApiVersion
       }, function() {});
 
 
@@ -55,7 +69,8 @@ describe('Strategy', function() {
   describe('authorization request with reauthorization parameters', function() {
     var strategy = new FacebookStrategy({
         clientID: 'ABC123',
-        clientSecret: 'secret'
+        clientSecret: 'secret',
+        graphApiVersion: graphApiVersion
       }, function() {});
 
 
@@ -80,7 +95,8 @@ describe('Strategy', function() {
   describe('failure caused by user denying request', function() {
     var strategy = new FacebookStrategy({
         clientID: 'ABC123',
-        clientSecret: 'secret'
+        clientSecret: 'secret',
+        graphApiVersion: graphApiVersion
       }, function() {});
 
 
@@ -111,7 +127,8 @@ describe('Strategy', function() {
   describe('error caused by app being in sandbox mode', function() {
     var strategy = new FacebookStrategy({
         clientID: 'ABC123',
-        clientSecret: 'secret'
+        clientSecret: 'secret',
+        graphApiVersion: graphApiVersion
       }, function() {});
 
 
@@ -142,7 +159,8 @@ describe('Strategy', function() {
   describe('error caused by invalid code sent to token endpoint (note: error format does not conform to OAuth 2.0 specification)', function() {
     var strategy = new FacebookStrategy({
         clientID: 'ABC123',
-        clientSecret: 'secret'
+        clientSecret: 'secret',
+        graphApiVersion: graphApiVersion
       }, function() {});
 
     strategy._oauth2.getOAuthAccessToken = function(code, options, callback) {
@@ -178,7 +196,8 @@ describe('Strategy', function() {
   describe('error caused by invalid code sent to token endpoint (note: error format conforms to OAuth 2.0 specification, though this is not the current behavior of the Facebook implementation)', function() {
     var strategy = new FacebookStrategy({
         clientID: 'ABC123',
-        clientSecret: 'secret'
+        clientSecret: 'secret',
+        graphApiVersion: graphApiVersion
       }, function() {});
 
     // inject a "mock" oauth2 instance

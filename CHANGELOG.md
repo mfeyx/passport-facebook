@@ -1,3 +1,13 @@
+# 3.0.0 (2018-08-07)
+
+* Made graphApiVersion a mandatory option @rwky
+* Added tests using the live facebook graph api @rwky
+* Removed deprecated username field @rwky
+* Fixed birthday field not populating @rwky
+* Set displayName to name field @rwky
+* README.md updates @rwky
+* Updated deps @rwky
+
 # 2.5.0 (2018-07-07)
 
 * Added profile mappings for hometown and currentLocation @rmacqueen 
