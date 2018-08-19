@@ -3,7 +3,7 @@
 
 var FacebookStrategy = require('../lib/strategy')
   , graphApiVersion = require('./graphApiVersion')
-  , accessToken = 'EAACsEG8z7z0BAGfUen0X85CwkZCxBqOLp3xZCj7oEJxZBQJ8s4mpN5jZAKhKNzDmzyQ31jhnzYLvVkPBdcGN84CowZAYmJwHiT3tQKQYd437tnKa6NfmkhBv51xBfg8XGAmPd37BPQBvZBpspyOeANPKNG9iCUbiZB0teZAXgCJwvjb5DdCZB7IrDJ3f48jVQ5VHKvvZCSWlQZB8yxZB3Qpit8ZCjvWHdK4kDY7rQOXvbGOOxzQZDZD'
+  , accessToken = 'EAACsEG8z7z0BAP0BP9haixZA3HEhSjLXtnnf6M9ZAwUZAgaHDOkr6VRUfCaX8zhJvMSvox77ZBuRVizhaN0ZAtZAW81bUrpVTAAH4dczX5RWZBVSURirkYWdw24mZBPAn3fEIlm6lh0hZA4FPuy9MBlUKlIYkigEeZBEsUAUZCe59Khfb9I4tS1ZBim5kZCWociZBdSZBYF48udi1m5LURD6aK10FinZBure7ZBm5iZAxodq6JgKzsMwZDZD'
   , clientID = '189186585128765'
   , clientSecret = '5fd09594f1fddff555d4960464c82dd6'
 
