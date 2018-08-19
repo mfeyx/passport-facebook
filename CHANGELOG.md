@@ -1,12 +1,19 @@
+This changelog follows Semantic Versioning https://semver.org/
+
 # 3.0.0 (2018-08-07)
 
+### Major
 * Made graphApiVersion a mandatory option @rwky
-* Added tests using the live facebook graph api @rwky
 * Removed deprecated username field @rwky
-* Fixed birthday field not populating @rwky
+
+### Minor
 * Set displayName to name field @rwky
+
+### Patch
 * README.md updates @rwky
 * Updated deps @rwky
+* Added tests using the live facebook graph api @rwky
+* Fixed birthday field not populating @rwky
 
 # 2.5.0 (2018-07-07)
 
