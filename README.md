@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/passport-next/passport-facebook/badge.svg?branch=master)](https://coveralls.io/github/passport-next/passport-facebook?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d260f366c44991e2613c/maintainability)](https://codeclimate.com/github/passport-next/passport-facebook/maintainability)
 [![Dependencies](https://david-dm.org/passport-next/passport-facebook.png)](https://david-dm.org/passport-next/passport-facebook)
-<!--[![SAST](https://gitlab.com/passport-next/passport-facebook/badges/master/build.svg)](https://gitlab.com/passport-next/passport-facebook/badges/master/build.svg)-->
+[![SAST](https://gitlab.com/passport-next/passport-facebook/badges/master/build.svg)](https://gitlab.com/passport-next/passport-facebook/badges/master/build.svg)
 
 
 [Passport](http://passportjs.org/) strategy for authenticating with [Facebook](http://www.facebook.com/)
