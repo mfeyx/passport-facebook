@@ -1,4 +1,4 @@
-var chai = require('chai');
+const chai = require('chai');
 
 chai.use(require('@passport-next/chai-passport-strategy'));
 
