@@ -46,7 +46,8 @@ complete authentication.
 passport.use(new FacebookStrategy({
     clientID: FACEBOOK_APP_ID,
     clientSecret: FACEBOOK_APP_SECRET,
-    callbackURL: "http://localhost:3000/auth/facebook/callback"
+    callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    graphApiVersion: 'v3.2'
   },
   function(accessToken, refreshToken, profile, cb) {
     User.findOrCreate({ facebookId: profile.id }, function (err, user) {
@@ -123,7 +124,8 @@ can be indicated by setting the `profileFields` option.
 new FacebookStrategy({
   clientID: FACEBOOK_APP_ID,
   clientSecret: FACEBOOK_APP_SECRET,
-  callbackURL: "http://localhost:3000/auth/facebook/callback",
+  callbackURL: 'http://localhost:3000/auth/facebook/callback',
+  graphApiVersion: 'v3.2',
   profileFields: ['id', 'displayName', 'photos', 'email']
 }), ...)
 ```
@@ -139,7 +141,8 @@ Set the `enableProof` option when creating the strategy.
 new FacebookStrategy({
   clientID: FACEBOOK_APP_ID,
   clientSecret: FACEBOOK_APP_SECRET,
-  callbackURL: "http://localhost:3000/auth/facebook/callback",
+  callbackURL: 'http://localhost:3000/auth/facebook/callback',
+  graphApiVersion: 'v3.2',
   enableProof: true
 }, ...)
 ```
@@ -167,8 +170,8 @@ You must specify which version of the API to use when initiating the strategy by
 new FacebookStrategy({
   clientID: FACEBOOK_APP_ID,
   clientSecret: FACEBOOK_APP_SECRET,
-  callbackURL: "http://localhost:3000/auth/facebook/callback",
-  graphApiVersion: 'v3.1'
+  callbackURL: 'http://localhost:3000/auth/facebook/callback',
+  graphApiVersion: 'v3.2'
 }, ...)
 ```
 

@@ -1,6 +1,13 @@
 /* global describe, it, before, expect */
 /* jshint expr: true */
 
+/**
+ * This tests the live fb api using a test account, the token is valid for 90 days so
+ * if this starts failing because the token has expired don't worry just raise an
+ * issue and we'll fix it.
+ */
+
+
 var FacebookStrategy = require('../lib/strategy')
   , graphApiVersion = require('./graphApiVersion')
   , accessToken = 'EAACsEG8z7z0BAChVWuGZCtjvOdad4EG8ANwqOd6SnwDFK7DWP4vCc3ei2FVrb3noZBAC1ZChUHCI8mFCGe0LLRKFeGfUZCOlDkrJNdC45uM552xhmJ4lWw84ywGrWds8mXsVT3hsdYWCsoaDqg5vzXAcLZB0tSPoh9D2FHmZBTmA8u40nxOSepMzRZA8ccDsSw8M4tpFN0L1RdELuIBFf5Sl8I5eB8RoXjz5l4AZBShgrAZDZD'

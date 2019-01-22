@@ -33,7 +33,20 @@ describe('Strategy', function() {
       expect(function() {
           var strategy = new FacebookStrategy({
             clientID: 'ABC123',
+            clientSecret: 'secret'
+          },
+          function() {});
+      }).to.throw(Error);
+    });
+  })
+
+  describe('constructed with invalid graphApiVersion option', function() {
+    it('should throw', function() {
+      expect(function() {
+          var strategy = new FacebookStrategy({
+            clientID: 'ABC123',
             clientSecret: 'secret',
+            graphApiVersion: 'invalid'
           },
           function() {});
       }).to.throw(Error);
