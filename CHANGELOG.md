@@ -1,5 +1,17 @@
 This changelog follows Semantic Versioning https://semver.org/
 
+# 3.1.0 (2019-01-22)
+
+### Minor
+
+* Check that graphApiToken matches required format #4 @rwky
+* Linted via ESLint @rwky
+
+### Patch
+
+* Added gitlab SAST @rwky
+* Updated dev deps @rwky
+
 # 3.0.0 (2018-08-07)
 
 ### Major
