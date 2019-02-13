@@ -1,5 +1,12 @@
 This changelog follows Semantic Versioning https://semver.org/
 
+# 3.1.1 (2019-02-13)
+
+### Patch
+
+* Fixed displayName containing 'undefined' when user has no middle name @adamreisnz @rwky
+* Updated npm deps @rwky
+
 # 3.1.0 (2019-01-22)
 
 ### Minor

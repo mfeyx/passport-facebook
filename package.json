@@ -1,6 +1,6 @@
 {
   "name": "@passport-next/passport-facebook",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Facebook authentication strategy for Passport.",
   "keywords": [
     "passport",
@@ -30,7 +30,7 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "@passport-next/passport-oauth2": "1.7.x"
+    "@passport-next/passport-oauth2": "^1.7.1"
   },
   "devDependencies": {
     "@passport-next/chai-passport-strategy": "1.1.x",
@@ -38,8 +38,8 @@
     "make-node": "0.3.x",
     "mocha": "5.x.x",
     "eslint-config-airbnb-base": "13.1.x",
-    "eslint-plugin-import": "2.15.x",
-    "eslint": "5.12.x"
+    "eslint-plugin-import": "2.16.x",
+    "eslint": "5.13.x"
   },
   "engines": {
     "node": ">= 6"
