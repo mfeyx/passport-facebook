@@ -15,7 +15,7 @@ const FacebookGraphAPIError = require('../lib/errors/facebookgraphapierror.js');
 const graphApiVersion = require('./graphApiVersion');
 
 
-const accessToken = 'EAACsEG8z7z0BAChVWuGZCtjvOdad4EG8ANwqOd6SnwDFK7DWP4vCc3ei2FVrb3noZBAC1ZChUHCI8mFCGe0LLRKFeGfUZCOlDkrJNdC45uM552xhmJ4lWw84ywGrWds8mXsVT3hsdYWCsoaDqg5vzXAcLZB0tSPoh9D2FHmZBTmA8u40nxOSepMzRZA8ccDsSw8M4tpFN0L1RdELuIBFf5Sl8I5eB8RoXjz5l4AZBShgrAZDZD';
+const accessToken = 'EAACsEG8z7z0BAJ7tYZBbRk4hMvmm9bhJZCQk4OqbtFGCPefOfY2d6nBg1tGs8ZC2fGPvMGyBUwKmaqZANbhTYPox243jjTB2NAuW4qjY75ukgBcnfrUjQcasLnf9AUzS4excO1f2vNdyhZAAEOzZAXq3xogVfMdxleiW9m4eYoTPgg6hZAbngRKLZCmGfwNYYzBzjsbEEJyPHc8SZAgbBEb63BOuA0dOWAwEo3BQi1Kb1rAZDZD';
 
 
 const clientID = '189186585128765';
