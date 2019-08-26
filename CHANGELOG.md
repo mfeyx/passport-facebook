@@ -1,4 +1,12 @@
 This changelog follows Semantic Versioning https://semver.org/
+# 3.1.2 (2019-08-26)
+
+### Patch
+
+* Updated npm deps @rwky
+* Fixed tests with live facebook tokens @rwky
+* Tested against API v4 @rwky
+* Updated travis to use supported node versions @rwky
 
 # 3.1.1 (2019-02-13)
 
