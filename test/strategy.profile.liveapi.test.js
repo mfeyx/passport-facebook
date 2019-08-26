@@ -14,14 +14,7 @@ const FacebookGraphAPIError = require('../lib/errors/facebookgraphapierror.js');
 
 const graphApiVersion = require('./graphApiVersion');
 
-
-const accessToken = 'EAACsEG8z7z0BAJ7tYZBbRk4hMvmm9bhJZCQk4OqbtFGCPefOfY2d6nBg1tGs8ZC2fGPvMGyBUwKmaqZANbhTYPox243jjTB2NAuW4qjY75ukgBcnfrUjQcasLnf9AUzS4excO1f2vNdyhZAAEOzZAXq3xogVfMdxleiW9m4eYoTPgg6hZAbngRKLZCmGfwNYYzBzjsbEEJyPHc8SZAgbBEb63BOuA0dOWAwEo3BQi1Kb1rAZDZD';
-
-
-const clientID = '189186585128765';
-
-
-const clientSecret = '5fd09594f1fddff555d4960464c82dd6';
+const { clientID, clientSecret, accessToken } = require('./credentials.js');
 
 describe('Strategy#userProfileLive', () => {
   describe('fetched from default endpoint', () => {
